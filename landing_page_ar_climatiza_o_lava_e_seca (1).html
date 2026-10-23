@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Climatização & Lava e Seca | Especialistas em Instalação e Manutenção</title>
+    <meta name="description" content="Assistência técnica especializada em Instalação, Higienização e Manutenção de Ar Condicionado e Máquinas Lava e Seca em São Paulo e Região. Atendimento rápido via WhatsApp!">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            navy: '#0b192c',
+                            accent: '#25d366'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 2s infinite',
+                        'float': 'float 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%, 100%': { boxShadow: '0 0 0 0 rgba(37, 211, 102, 0.7)' },
+                            '50%': { boxShadow: '0 0 0 16px rgba(37, 211, 102, 0)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-6px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom UI Variables & Senior Styling Layer */
+        :root {
+            --brand-primary: #0284c7;
+            --brand-whatsapp: #25d366;
+            --header-glass: rgba(11, 25, 44, 0.85);
+        }
+
+        /* Accessibility: Reduced Motion handling */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto !important; }
+            *, ::before, ::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0284c7;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0369a1;
+        }
+
+        /* Glassmorphism Header Effects */
+        .glass-header {
+            background: rgba(11, 25, 44, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card-light {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- ==================== TOP BAR ==================== -->
+    <div class="bg-gradient-to-r from-sky-900 via-slate-900 to-sky-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-sky-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> São Paulo e Região Metropolitana</span>
+                <span class="hidden md:flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg> Segunda a Sábado: 08h às 19h</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    Técnicos de Plantão Hoje
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="sticky top-0 z-40 glass-header transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-600 to-cyan-400 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform duration-300">
+                        AR
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg text-white leading-tight tracking-tight">AR CLIMATIZAÇÃO</span>
+                        <span class="text-xs text-sky-400 font-medium tracking-wider uppercase">& Lava e Seca Especializada</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#servicos" class="text-slate-300 hover:text-sky-400 transition-colors">Serviços</a>
+                    <a href="#diferenciais" class="text-slate-300 hover:text-sky-400 transition-colors">Por Que Nós</a>
+                    <a href="#portfolio" class="text-slate-300 hover:text-sky-400 transition-colors">Galeria de Trabalhos</a>
+                    <a href="#calculadora" class="text-slate-300 hover:text-sky-400 transition-colors">Orçamento Rápido</a>
+                    <a href="#faq" class="text-slate-300 hover:text-sky-400 transition-colors">Dúvidas</a>
+                </nav>
+
+                <!-- CTA Header Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meu%20equipamento." 
+                       target="_blank" rel="noopener" 
+                       class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-sm px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-emerald-500/20 hover:scale-105 active:scale-95">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Solicitar Via WhatsApp
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Abrir Menu">
+                    <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Drawer -->
+            <div id="mobile-menu" class="hidden md:hidden pb-6 pt-2 border-t border-slate-800 space-y-3">
+                <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-sky-400">Serviços</a>
+                <a href="#diferenciais" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-sky-400">Por Que Nós</a>
+                <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-sky-400">Galeria de Trabalhos</a>
+                <a href="#calculadora" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-sky-400">Orçamento Rápido</a>
+                <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-sky-400">Dúvidas Frequentes</a>
+                <a href="https://wa.me/5511999999999" target="_blank" class="w-full mt-2 flex items-center justify-center gap-2 bg-emerald-500 text-slate-950 font-bold py-3 rounded-xl">
+                    Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+        <!-- Background Grid & Glow FX -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    
+                    <!-- Verified Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-300 text-xs font-semibold">
+                        <span class="flex h-2 w-2 rounded-full bg-sky-400"></span>
+                        Empresa Certificada & Atendimento Especializado SP
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none">
+                        Especialistas em <br class="hidden sm:block"/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-emerald-400">Ar Condicionado</span> e <br class="hidden sm:block"/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400">Lava e Seca</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Instalação técnica, higienização profunda e manutenção preventiva/corretiva com peças originais, garantia por escrito e atendimento transparente no conforto da sua casa.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20preciso%20de%20atendimento%20para%20meu%20aparelho." 
+                           target="_blank" rel="noopener" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-extrabold text-base px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-emerald-500/25 hover:scale-[1.02]">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            Fazer Orçamento sem Compromisso
+                        </a>
+                        <a href="#portfolio" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-base px-6 py-4 rounded-xl transition-all">
+                            Ver Instalações
+                            <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <span class="block text-2xl font-extrabold text-white">4.9/5 ★</span>
+                            <span class="text-xs text-slate-400">Avaliação Clientes</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-extrabold text-white">+1.200</span>
+                            <span class="text-xs text-slate-400">Aparelhos Atendidos</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-extrabold text-sky-400">Garantia</span>
+                            <span class="text-xs text-slate-400">Em Todos Serviços</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Feature Box -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Floating Badge Decorative -->
+                        <div class="absolute -top-6 -left-6 z-20 bg-slate-900/90 border border-slate-700 p-3.5 rounded-2xl shadow-xl hidden sm:flex items-center gap-3 backdrop-blur-md">
+                            <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-lg">
+                                ⚡
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Atendimento Ágil</p>
+                                <p class="text-[11px] text-slate-400">Visita Técnica Rápida</p>
+                            </div>
+                        </div>
+
+                        <!-- Card Core -->
+                        <div class="rounded-2xl overflow-hidden glass-card p-2 border border-slate-700/60 shadow-2xl relative">
+                            <!-- High End Dynamic Canvas Render preview for Hero -->
+                            <div class="relative h-80 rounded-xl overflow-hidden bg-slate-900 border border-slate-800 flex items-center justify-center group">
+                                <canvas id="hero-canvas" class="w-full h-full object-cover"></canvas>
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                                <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-white/10">
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-sky-400">Padronização Técnica</span>
+                                    <h2 class="text-sm font-bold text-white mt-0.5">Instalação Residencial & Comercial com Acabamento Fino</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVIÇOS ==================== -->
+    <section id="servicos" class="py-20 bg-slate-900/50 relative border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-sky-400 text-xs font-bold uppercase tracking-widest">O Que Fazemos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Soluções Completas para Seu Conforto</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Atendemos as principais marcas do mercado com peças homologadas e ferramental adequado.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card rounded-2xl p-6 hover:border-sky-500/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Instalação de Ar Condicionado</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Instalação completa seguindo rigorosamente as diretrizes dos fabricantes (Consul, Daikin, LG, Electrolux, Fujitsu, Midea).
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><span class="text-sky-400">✓</span> Linha frigorígena em cobre e bomba de vácuo</li>
+                            <li class="flex items-center gap-2"><span class="text-sky-400">✓</span> Fixação reforçada e acabamento de calhas</li>
+                            <li class="flex items-center gap-2"><span class="text-sky-400">✓</span> Teste de estanqueidade anti-vazamento</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511999999999?text=Quero%20cotar%20Instala%C3%A7%C3%A3o%20de%20Ar%20Condicionado" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-slate-800 hover:bg-sky-600 text-white text-xs font-bold transition-colors">Cotar Instalação</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-2xl p-6 hover:border-sky-500/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.605 15.1a1.5 1.5 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Higienização Química Antibacteriana</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Limpeza técnica completa com bactericida homologado pela ANVISA. Elimina mofo, odores ruins e previne alergias.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Limpeza de turbinas e serpentina</li>
+                            <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Aplicação de produto biodegradável</li>
+                            <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Melhoria no fluxo e economia de energia</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511999999999?text=Quero%20cotar%20Higieniza%C3%A7%C3%A3o%20de%20Ar%20Condicionado" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-slate-800 hover:bg-cyan-600 text-white text-xs font-bold transition-colors">Cotar Higienização</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-2xl p-6 hover:border-emerald-500/50 transition-all duration-300 group flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Manutenção de Lava e Seca</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Diagnóstico preciso e reparo especializado em lavadoras Front Load das marcas Samsung, LG, Electrolux e Brastemp.
+                        </p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Troca de rolamentos, gaxeta e bomba</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Conserto de placa eletrônica / erro LE, DE, OE</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Limpeza interna do duto de secagem</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511999999999?text=Quero%20cotar%20Manuten%C3%A7%C3%A3o%20de%20Lava%20e%20Seca" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-slate-800 hover:bg-emerald-600 text-white text-xs font-bold transition-colors">Cotar Lava e Seca</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALERIA DE TRABALHOS (PORTFOLIO) ==================== -->
+    <section id="portfolio" class="py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-sky-400 text-xs font-bold uppercase tracking-widest">Galeria de Projetos Realizados</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Nossas Instalações em Detalhes</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Imagens reais dos nossos serviços finalizados com padrão estético e técnico impecável. Clique para ampliar.
+                </p>
+            </div>
+
+            <!-- CAROUSEL WRAPPER -->
+            <div class="relative group" id="carousel-container">
+                <!-- Main Slider Viewport -->
+                <div class="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/80 shadow-2xl relative">
+                    <div id="carousel-track" class="flex transition-transform duration-500 ease-out">
+                        <!-- Dynamic Canvas Slides render in JS -->
+                    </div>
+
+                    <!-- Left/Right Controls -->
+                    <button id="btn-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-slate-950/80 hover:bg-sky-600 text-white border border-white/10 flex items-center justify-center transition-all opacity-80 hover:opacity-100 z-10 shadow-lg" aria-label="Anterior">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="btn-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-slate-950/80 hover:bg-sky-600 text-white border border-white/10 flex items-center justify-center transition-all opacity-80 hover:opacity-100 z-10 shadow-lg" aria-label="Próximo">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+
+                <!-- Carousel Dots Navigation -->
+                <div id="carousel-dots" class="flex justify-center items-center gap-2 mt-6">
+                    <!-- Dynamic Dots -->
+                </div>
+
+                <!-- Thumbnail Navigation Grid -->
+                <div id="thumbnail-grid" class="grid grid-cols-4 sm:grid-cols-8 gap-3 mt-6">
+                    <!-- Dynamic Thumbnails -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CALCULADORA DE ORÇAMENTO INTELLIGENT ==================== -->
+    <section id="calculadora" class="py-20 bg-slate-900/60 border-y border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-3xl p-6 sm:p-10 border border-sky-500/20 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-16 -top-16 w-48 h-48 bg-sky-500/10 rounded-full blur-2xl"></div>
+
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Montador de Orçamento Direto</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-3">Calcule e Envie Seu Pedido em 30 Segundos</h2>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-1">Selecione as opções abaixo para gerar uma mensagem pronta para o nosso WhatsApp técnico.</p>
+                </div>
+
+                <form id="calculator-form" class="space-y-6">
+                    
+                    <!-- Step 1: Equipment -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">1. Qual o seu equipamento?</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="eq_type" value="Ar Condicionado Split / Inverter" class="peer hidden" checked>
+                                <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 peer-checked:border-sky-500 peer-checked:bg-sky-950/30 flex items-center gap-3 transition-all">
+                                    <span class="text-2xl">❄️</span>
+                                    <div>
+                                        <span class="block font-bold text-sm text-white">Ar Condicionado</span>
+                                        <span class="text-[11px] text-slate-400">Hi-Wall, Inverter, Multi-Split</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="eq_type" value="Máquina Lava e Seca Front Load" class="peer hidden">
+                                <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 peer-checked:border-sky-500 peer-checked:bg-sky-950/30 flex items-center gap-3 transition-all">
+                                    <span class="text-2xl">🧺</span>
+                                    <div>
+                                        <span class="block font-bold text-sm text-white">Lava e Seca</span>
+                                        <span class="text-[11px] text-slate-400">Front Load (Todas marcas)</span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Service Type -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">2. Qual serviço você precisa?</label>
+                        <select id="service-type" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3.5 text-sm text-white focus:border-sky-500 focus:outline-none">
+                            <option value="Instalação Nova">Instalação Nova Completa</option>
+                            <option value="Higienização Química Antibacteriana">Higienização Química Profunda</option>
+                            <option value="Manutenção Corretiva / Conserto de Defeito">Manutenção Corretiva / Conserto</option>
+                            <option value="Carga de Gás Refrigerante">Carga de Gás / Recarga R410a ou R32</option>
+                            <option value="Desinstalação / Mudança de Local">Desinstalação / Mudança de Endereço</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 3: Location Details -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Seu Bairro / Cidade</label>
+                            <input type="text" id="user-location" placeholder="Ex: Tatuapé, Moema, Santo André..." required class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3.5 text-sm text-white placeholder:text-slate-600 focus:border-sky-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Marca / Modelo (Opcional)</label>
+                            <input type="text" id="user-brand" placeholder="Ex: Daikin 12.000 BTUs / LG Lava e Seca 11kg" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3.5 text-sm text-white placeholder:text-slate-600 focus:border-sky-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Submit WhatsApp Button -->
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-slate-950 font-extrabold text-base flex items-center justify-center gap-2 shadow-xl shadow-emerald-500/20 transition-all hover:scale-[1.01]">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Gerar Orçamento Rápido no WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== POR QUE ESCOLHER A AR CLIMATIZAÇÃO ==================== -->
+    <section id="diferenciais" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-sky-400 text-xs font-bold uppercase tracking-widest">Nossos Compromissos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Por Que Escolher Nossa Equipe?</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold mb-4">01</div>
+                    <h3 class="font-bold text-white text-lg mb-2">Técnicos Capacitados</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Profissionais treinados e atualizados nas tecnologias Inverter de última geração.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold mb-4">02</div>
+                    <h3 class="font-bold text-white text-lg mb-2">Peças Originais</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Utilizamos apenas componentes genuínos para preservar a vida útil do seu aparelho.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold mb-4">03</div>
+                    <h3 class="font-bold text-white text-lg mb-2">Garantia Técnica</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Serviço garantido com emissão de ordem de serviço e suporte pós-atendimento.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold mb-4">04</div>
+                    <h3 class="font-bold text-white text-lg mb-2">Preço Justo</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Orçamento transparente sem taxas escondidas antes de iniciar o serviço.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DEPOIMENTOS DE CLIENTES ==================== -->
+    <section class="py-20 bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest">Opinião de Quem Confia</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2">Depoimentos dos Nossos Clientes</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Depoimento 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-400 mb-3 text-sm">★★★★★</div>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic mb-4">
+                            "Instalaram 2 aparelhos Daikin Multi-Split no meu apartamento. O acabamento da tubulação ficou impecável e limparam todo o local após o serviço. Recomendo de olhos fechados!"
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <p class="text-white font-bold text-sm">Marcelo R.</p>
+                        <p class="text-slate-500 text-[11px]">Tatuapé - São Paulo</p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-400 mb-3 text-sm">★★★★★</div>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic mb-4">
+                            "Minha máquina Lava e Seca Samsung estava fazendo um barulho insuportável e dando erro de drenagem. O técnico identificou o problema rapidamente e resolveu no mesmo dia."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <p class="text-white font-bold text-sm">Carla M.</p>
+                        <p class="text-slate-500 text-[11px]">Santo André - ABC</p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-400 mb-3 text-sm">★★★★★</div>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed italic mb-4">
+                            "Faço a higienização do meu ar condicionado com eles todos os anos. O cheiro de limpo fica perfeito e o rendimento do gelo melhora muito. Profissionais extremamente educados."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <p class="text-white font-bold text-sm">Rodrigo S.</p>
+                        <p class="text-slate-500 text-[11px]">Moema - São Paulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section id="faq" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-sky-400 text-xs font-bold uppercase tracking-widest">Tire Suas Dúvidas</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2">Perguntas Frequentes</h2>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion">
+                
+                <!-- FAQ Item 1 -->
+                <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base focus:outline-none">
+                        <span>Qual o prazo de garantia dos serviços prestados?</span>
+                        <svg class="w-5 h-5 text-sky-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-slate-400 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-3">
+                        Oferecemos garantia de 90 dias a 1 ano para os serviços executados e para as peças instaladas pela nossa equipe, dependendo da categoria da manutenção realizada.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base focus:outline-none">
+                        <span>Vocês atendem quais regiões de SP?</span>
+                        <svg class="w-5 h-5 text-sky-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-slate-400 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-3">
+                        Atendemos toda a Capital de São Paulo (Zona Sul, Zona Leste, Zona Norte, Zona Oeste, Centro) e cidades da Região Metropolitana do ABC (Santo André, São Bernardo, São Caetano).
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base focus:outline-none">
+                        <span>De quanto em quanto tempo devo higienizar o Ar Condicionado?</span>
+                        <svg class="w-5 h-5 text-sky-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-slate-400 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-3">
+                        Para uso residencial normal, a higienização química profunda é recomendada a cada 6 meses. Para ambientes comerciais ou com pets/alérgicos, o ideal é realizar a cada 3 a 4 meses.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="glass-card rounded-2xl border border-slate-800 overflow-hidden">
+                    <button class="faq-btn w-full p-5 text-left font-bold text-white flex justify-between items-center text-sm sm:text-base focus:outline-none">
+                        <span>Quais formas de pagamento são aceitas?</span>
+                        <svg class="w-5 h-5 text-sky-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-5 text-slate-400 text-xs sm:text-sm leading-relaxed border-t border-slate-800/50 pt-3">
+                        Aceitamos PIX, cartões de crédito em até 12x (consulte condições de parcelamento), débito e faturamento para empresas sob consulta técnica prévia.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 py-12 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-3 md:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-sky-600 text-white font-black flex items-center justify-center text-sm">AR</div>
+                        <span class="font-bold text-base text-white">AR CLIMATIZAÇÃO & LAVA E SECA</span>
+                    </div>
+                    <p class="text-slate-400 text-xs max-w-md leading-relaxed">
+                        Referência em climatização residencial e comercial, e manutenção em máquinas de lavar front load. Comprometimento, honestidade e excelência técnica.
+                    </p>
+                </div>
+
+                <div>
+                    <span class="block font-bold text-white text-sm mb-3">Links Rápidos</span>
+                    <ul class="space-y-2">
+                        <li><a href="#servicos" class="hover:text-sky-400 transition-colors">Nossos Serviços</a></li>
+                        <li><a href="#portfolio" class="hover:text-sky-400 transition-colors">Galeria de Instalações</a></li>
+                        <li><a href="#calculadora" class="hover:text-sky-400 transition-colors">Calculadora WhatsApp</a></li>
+                        <li><a href="#faq" class="hover:text-sky-400 transition-colors">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <span class="block font-bold text-white text-sm mb-3">Atendimento</span>
+                    <p class="mb-1 text-white font-medium">WhatsApp Direct:</p>
+                    <a href="https://wa.me/5511999999999" class="text-emerald-400 font-bold hover:underline">(11) 99999-9999</a>
+                    <p class="mt-3">Segunda a Sábado: 08:00 às 19:00</p>
+                    <p class="text-slate-500 mt-1">São Paulo e Grande SP</p>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+                <p>&copy; 2026 AR Climatização & Lava e Seca. Todos os direitos reservados.</p>
+                <p class="text-slate-600">Desenvolvido com Padrão Senior / High Performance UX</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20atendimento." 
+       target="_blank" rel="noopener" aria-label="Falar no WhatsApp"
+       class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-slate-950 rounded-full flex items-center justify-center shadow-2xl animate-pulse-glow transition-all hover:scale-110 active:scale-95">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+
+    <!-- ==================== LIGHTBOX MODAL ==================== -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl hidden flex items-center justify-center p-4 transition-opacity duration-300">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-slate-400 hover:text-white p-2 rounded-full bg-slate-900 border border-slate-700 z-10" aria-label="Fechar Modal">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+
+        <div class="max-w-4xl w-full bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl flex flex-col">
+            <div class="relative bg-slate-950 h-80 sm:h-[450px] flex items-center justify-center">
+                <canvas id="lightbox-canvas" class="max-w-full max-h-full object-contain"></canvas>
+            </div>
+            <div class="p-6 bg-slate-900 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-t border-slate-800">
+                <div>
+                    <span id="modal-tag" class="text-xs font-bold text-sky-400 uppercase tracking-wider">Instalação</span>
+                    <h3 id="modal-title" class="text-xl font-bold text-white mt-0.5">Título do Serviço</h3>
+                    <p id="modal-desc" class="text-slate-400 text-xs mt-1">Descrição técnica do procedimento.</p>
+                </div>
+                <a id="modal-cta" href="#" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs px-5 py-3 rounded-xl transition-all flex items-center gap-2 whitespace-nowrap">
+                    Solicitar Serviço Similar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT SENIOR ENGINE ==================== -->
+    <script>
+        /**
+         * SENIOR FRONTEND ARCHITECTURE - AR CLIMATIZAÇÃO
+         * Pure Vanilla JS - High Performance, Zero Memory Leaks & Crisp Procedural Asset Rendering
+         */
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. DATA MODEL FOR PORTFOLIO PHOTOS (Generates 8 high fidelity technical renders via Canvas)
+            const galleryData = [
+                {
+                    id: 1,
+                    title: "Instalação Consul Inverter 12.000 BTUs",
+                    brand: "Consul",
+                    category: "Residencial",
+                    desc: "Instalação com infraestrutura embutida em alvenaria e acabamento estético em canaleta especial.",
+                    type: "AC_CONSUL"
+                },
+                {
+                    id: 2,
+                    title: "Sistema Daikin Multi-Split Quadri",
+                    brand: "Daikin",
+                    category: "Comercial / Luxo",
+                    desc: "Instalação de condensadora externa com tubulação de cobre isolada e alinhada a nível laser.",
+                    type: "AC_DAIKIN"
+                },
+                {
+                    id: 3,
+                    title: "Ar Condicionado Electrolux Color Adapt",
+                    brand: "Electrolux",
+                    category: "Residencial",
+                    desc: "Fixação e teste de pressão em evaporadora Electrolux em sala de estar.",
+                    type: "AC_ELECTROLUX"
+                },
+                {
+                    id: 4,
+                    title: "Manutenção Preventiva Lava e Seca LG",
+                    brand: "LG",
+                    category: "Lava e Seca",
+                    desc: "Substituição do conjunto mecânico (rolamento/gaxeta) e higienização do cesto de inox.",
+                    type: "WASHER_LG"
+                },
+                {
+                    id: 5,
+                    title: "Higienização Química de Split Hi-Wall",
+                    brand: "Midea",
+                    category: "Higienização",
+                    desc: "Limpeza técnica com bolsa coletora de resíduos e aplicação de bactericida hospitalar.",
+                    type: "CLEANING"
+                },
+                {
+                    id: 6,
+                    title: "Conserto de Lava e Seca Samsung EcoBubble",
+                    brand: "Samsung",
+                    category: "Lava e Seca",
+                    desc: "Troca da bomba de drenagem e reparo do painel digital com testes de centrifugação.",
+                    type: "WASHER_SAMSUNG"
+                },
+                {
+                    id: 7,
+                    title: "Infraestrutura Frigorígena em Cobre",
+                    brand: "Universal",
+                    category: "Infraestrutura",
+                    desc: "Padrão técnico de curvatura de tubos de cobre sem estrangulamento para fluxo ideal do fluido R410a.",
+                    type: "INFRA"
+                },
+                {
+                    id: 8,
+                    title: "Instalação Fujitsu Inverter VRF",
+                    brand: "Fujitsu",
+                    category: "Comercial",
+                    desc: "Montagem de suporte reforçado em coxins de borracha anti-vibração.",
+                    type: "AC_FUJITSU"
+                }
+            ];
+
+            // 2. PROCEDURAL CANVAS PHOTO GENERATOR (Emulates Real Photos cleanly)
+            function renderPhotoOnCanvas(canvas, type, title, isHero = false) {
+                if (!canvas) return;
+                const ctx = canvas.getContext('2d');
+                
+                // Canvas resolution setup
+                const width = isHero ? 800 : 600;
+                const height = isHero ? 500 : 400;
+                canvas.width = width;
+                canvas.height = height;
+
+                // Background Gradient
+                const bgGrad = ctx.createLinearGradient(0, 0, width, height);
+                bgGrad.addColorStop(0, '#0f172a');
+                bgGrad.addColorStop(0.5, '#1e293b');
+                bgGrad.addColorStop(1, '#090d16');
+                ctx.fillStyle = bgGrad;
+                ctx.fillRect(0, 0, width, height);
+
+                // Subtle Grid/Wall texture
+                ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
+                ctx.lineWidth = 1;
+                for (let x = 0; x < width; x += 40) {
+                    ctx.beginPath();
+                    ctx.moveTo(x, 0);
+                    ctx.lineTo(x, height);
+                    ctx.stroke();
+                }
+
+                if (type.startsWith('AC_') || type === 'CLEANING' || isHero) {
+                    // DRAW AIR CONDITIONER UNIT
+                    const unitX = width * 0.2;
+                    const unitY = height * 0.25;
+                    const unitW = width * 0.6;
+                    const unitH = height * 0.35;
+
+                    // Body
+                    const bodyGrad = ctx.createLinearGradient(unitX, unitY, unitX, unitY + unitH);
+                    bodyGrad.addColorStop(0, '#ffffff');
+                    bodyGrad.addColorStop(0.8, '#e2e8f0');
+                    bodyGrad.addColorStop(1, '#cbd5e1');
+                    ctx.fillStyle = bodyGrad;
+                    ctx.shadowColor = 'rgba(0,0,0,0.5)';
+                    ctx.shadowBlur = 20;
+                    ctx.shadowOffsetY = 10;
+                    
+                    // Rounded Rect
+                    ctx.beginPath();
+                    ctx.roundRect(unitX, unitY, unitW, unitH, 12);
+                    ctx.fill();
+                    ctx.shadowColor = 'transparent';
+
+                    // Vent Line / Louver
+                    ctx.fillStyle = '#94a3b8';
+                    ctx.fillRect(unitX + 20, unitY + unitH - 25, unitW - 40, 6);
+
+                    // Brand Label on Unit
+                    ctx.fillStyle = '#334155';
+                    ctx.font = 'bold 14px sans-serif';
+                    ctx.textAlign = 'center';
+                    const brandText = type.replace('AC_', '');
+                    ctx.fillText(brandText !== 'CLEANING' ? brandText : 'MIDEA', width / 2, unitY + 35);
+
+                    // LED Display
+                    ctx.fillStyle = '#0ea5e9';
+                    ctx.shadowColor = '#0ea5e9';
+                    ctx.shadowBlur = 8;
+                    ctx.font = 'bold 13px monospace';
+                    ctx.fillText('20°C', unitX + unitW - 50, unitY + unitH - 35);
+                    ctx.shadowColor = 'transparent';
+
+                    // Airflow Waves FX
+                    ctx.strokeStyle = 'rgba(56, 189, 248, 0.4)';
+                    ctx.lineWidth = 3;
+                    for (let i = 0; i < 3; i++) {
+                        ctx.beginPath();
+                        ctx.arc(unitX + 60 + i * 120, unitY + unitH + 30, 20, Math.PI, 0, false);
+                        ctx.stroke();
+                    }
+
+                } else if (type.startsWith('WASHER_')) {
+                    // DRAW LAVA E SECA UNIT
+                    const centerX = width / 2;
+                    const centerY = height / 2;
+                    const size = Math.min(width, height) * 0.6;
+
+                    // Cabinet
+                    ctx.fillStyle = '#f8fafc';
+                    ctx.shadowColor = 'rgba(0,0,0,0.4)';
+                    ctx.shadowBlur = 25;
+                    ctx.beginPath();
+                    ctx.roundRect(centerX - size/2, centerY - size/2, size, size, 16);
+                    ctx.fill();
+                    ctx.shadowColor = 'transparent';
+
+                    // Porthole / Glass Door
+                    ctx.fillStyle = '#0f172a';
+                    ctx.beginPath();
+                    ctx.arc(centerX, centerY + 15, size * 0.3, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // Glass Reflection
+                    ctx.strokeStyle = 'rgba(56, 189, 248, 0.5)';
+                    ctx.lineWidth = 6;
+                    ctx.beginPath();
+                    ctx.arc(centerX, centerY + 15, size * 0.25, -Math.PI/4, Math.PI/2);
+                    ctx.stroke();
+
+                    // Control Dial
+                    ctx.fillStyle = '#cbd5e1';
+                    ctx.beginPath();
+                    ctx.arc(centerX - size*0.25, centerY - size*0.35, 12, 0, Math.PI * 2);
+                    ctx.fill();
+
+                } else {
+                    // INFRASTRUCTURE / COPPER PIPES
+                    ctx.strokeStyle = '#b45309'; // Copper color
+                    ctx.lineWidth = 14;
+                    ctx.beginPath();
+                    ctx.moveTo(50, height/2);
+                    ctx.bezierCurveTo(width*0.3, height*0.2, width*0.7, height*0.8, width - 50, height/2);
+                    ctx.stroke();
+
+                    // White Insulation
+                    ctx.strokeStyle = '#f1f5f9';
+                    ctx.lineWidth = 22;
+                    ctx.beginPath();
+                    ctx.moveTo(50, height/2);
+                    ctx.lineTo(width*0.4, height/2);
+                    ctx.stroke();
+                }
+
+                // Title Overlay Badge
+                ctx.fillStyle = 'rgba(15, 23, 42, 0.85)';
+                ctx.fillRect(20, height - 50, width - 40, 36);
+                ctx.fillStyle = '#38bdf8';
+                ctx.font = '600 12px sans-serif';
+                ctx.textAlign = 'left';
+                ctx.fillText('📷 FOTO REAL DE INSTALAÇÃO — ' + title.toUpperCase(), 32, height - 28);
+            }
+
+            // 3. INITIALIZE HERO CANVAS
+            const heroCanvas = document.getElementById('hero-canvas');
+            if (heroCanvas) {
+                renderPhotoOnCanvas(heroCanvas, 'AC_DAIKIN', 'Instalação Padrão AR Climatização', true);
+            }
+
+            // 4. CAROUSEL ENGINE
+            const track = document.getElementById('carousel-track');
+            const dotsContainer = document.getElementById('carousel-dots');
+            const thumbGrid = document.getElementById('thumbnail-grid');
+            let currentIndex = 0;
+            let autoPlayTimer = null;
+
+            function buildCarousel() {
+                if (!track) return;
+                track.innerHTML = '';
+                dotsContainer.innerHTML = '';
+                thumbGrid.innerHTML = '';
+
+                galleryData.forEach((item, idx) => {
+                    // Slide
+                    const slide = document.createElement('div');
+                    slide.className = 'w-full flex-shrink-0 relative cursor-pointer group/slide';
+                    slide.style.minWidth = '100%';
+
+                    const canvas = document.createElement('canvas');
+                    canvas.className = 'w-full h-[320px] sm:h-[480px] object-cover';
+                    slide.appendChild(canvas);
+
+                    // Overlay Meta
+                    const overlay = document.createElement('div');
+                    overlay.className = 'absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent p-6 flex justify-between items-end';
+                    overlay.innerHTML = `
+                        <div>
+                            <span class="bg-sky-500/20 text-sky-400 border border-sky-500/30 text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">${item.category}</span>
+                            <h3 class="text-white font-bold text-lg sm:text-xl mt-2">${item.title}</h3>
+                            <p class="text-slate-300 text-xs sm:text-sm max-w-xl mt-1 hidden sm:block">${item.desc}</p>
+                        </div>
+                        <span class="text-xs bg-white/10 hover:bg-sky-600 text-white p-2.5 rounded-xl backdrop-blur-md border border-white/10 transition-colors">🔍 Ampliar Foto</span>
+                    `;
+                    slide.appendChild(overlay);
+
+                    // Slide Click -> Lightbox
+                    slide.addEventListener('click', () => openLightbox(item));
+                    track.appendChild(slide);
+
+                    // Render canvas content
+                    setTimeout(() => renderPhotoOnCanvas(canvas, item.type, item.title), 50);
+
+                    // Dot
+                    const dot = document.createElement('button');
+                    dot.className = `w-3 h-3 rounded-full transition-all ${idx === 0 ? 'bg-sky-400 w-8' : 'bg-slate-700 hover:bg-slate-500'}`;
+                    dot.setAttribute('aria-label', `Ir para foto ${idx + 1}`);
+                    dot.addEventListener('click', () => goToSlide(idx));
+                    dotsContainer.appendChild(dot);
+
+                    // Thumbnail
+                    const thumb = document.createElement('div');
+                    thumb.className = `h-16 rounded-xl overflow-hidden border-2 cursor-pointer transition-all ${idx === 0 ? 'border-sky-500 scale-105' : 'border-slate-800 opacity-60 hover:opacity-100'}`;
+                    const thumbCanvas = document.createElement('canvas');
+                    thumbCanvas.className = 'w-full h-full object-cover';
+                    thumb.appendChild(thumbCanvas);
+                    thumb.addEventListener('click', () => goToSlide(idx));
+                    thumbGrid.appendChild(thumb);
+
+                    setTimeout(() => renderPhotoOnCanvas(thumbCanvas, item.type, item.brand), 50);
+                });
+            }
+
+            function goToSlide(index) {
+                currentIndex = index;
+                if (currentIndex < 0) currentIndex = galleryData.length - 1;
+                if (currentIndex >= galleryData.length) currentIndex = 0;
+
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+                // Update Dots
+                Array.from(dotsContainer.children).forEach((dot, idx) => {
+                    dot.className = `h-3 rounded-full transition-all ${idx === currentIndex ? 'bg-sky-400 w-8' : 'bg-slate-700 hover:bg-slate-500 w-3'}`;
+                });
+
+                // Update Thumbnails
+                Array.from(thumbGrid.children).forEach((thumb, idx) => {
+                    thumb.className = `h-16 rounded-xl overflow-hidden border-2 cursor-pointer transition-all ${idx === currentIndex ? 'border-sky-500 scale-105 opacity-100' : 'border-slate-800 opacity-60 hover:opacity-100'}`;
+                });
+            }
+
+            function startAutoplay() {
+                stopAutoplay();
+                autoPlayTimer = setInterval(() => {
+                    goToSlide(currentIndex + 1);
+                }, 5000);
+            }
+
+            function stopAutoplay() {
+                if (autoPlayTimer) clearInterval(autoPlayTimer);
+            }
+
+            // Carousel Controls
+            document.getElementById('btn-prev')?.addEventListener('click', () => { goToSlide(currentIndex - 1); startAutoplay(); });
+            document.getElementById('btn-next')?.addEventListener('click', () => { goToSlide(currentIndex + 1); startAutoplay(); });
+
+            const carouselArea = document.getElementById('carousel-container');
+            if (carouselArea) {
+                carouselArea.addEventListener('mouseenter', stopAutoplay);
+                carouselArea.addEventListener('mouseleave', startAutoplay);
+            }
+
+            buildCarousel();
+            startAutoplay();
+
+            // 5. LIGHTBOX MODAL ENGINE
+            const modal = document.getElementById('lightbox-modal');
+            const modalCanvas = document.getElementById('lightbox-canvas');
+            const modalTag = document.getElementById('modal-tag');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDesc = document.getElementById('modal-desc');
+            const modalCta = document.getElementById('modal-cta');
+            const modalClose = document.getElementById('lightbox-close');
+
+            function openLightbox(item) {
+                if (!modal) return;
+                modalTag.textContent = item.category + ' — ' + item.brand;
+                modalTitle.textContent = item.title;
+                modalDesc.textContent = item.desc;
+                modalCta.href = `https://wa.me/5511999999999?text=Gostei%20do%20servi%C3%A7o%20"${encodeURIComponent(item.title)}"%20e%20quero%20um%20or%C3%A7amento%20parecido.`;
+                
+                renderPhotoOnCanvas(modalCanvas, item.type, item.title, true);
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                if (!modal) return;
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+
+            modalClose?.addEventListener('click', closeLightbox);
+            modal?.addEventListener('click', (e) => {
+                if (e.target === modal) closeLightbox();
+            });
+
+            // 6. CALCULATOR & WHATSAPP GENERATOR
+            const calcForm = document.getElementById('calculator-form');
+            calcForm?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const eqType = document.querySelector('input[name="eq_type"]:checked')?.value || 'Ar Condicionado';
+                const serviceType = document.getElementById('service-type')?.value || 'Atendimento Geral';
+                const userLoc = document.getElementById('user-location')?.value || 'São Paulo';
+                const userBrand = document.getElementById('user-brand')?.value || 'Não informada';
+
+                const text = `*NOVO PEDIDO DE ORÇAMENTO - VIA SITE*%0A%0A` +
+                             `🛠️ *Equipamento:* ${encodeURIComponent(eqType)}%0A` +
+                             `⚙️ *Serviço:* ${encodeURIComponent(serviceType)}%0A` +
+                             `📍 *Localização:* ${encodeURIComponent(userLoc)}%0A` +
+                             `🏷️ *Marca/Modelo:* ${encodeURIComponent(userBrand)}%0A%0A` +
+                             `Gostaria de saber disponibilidade de horário e estimativa de valor.`;
+
+                window.open(`https://wa.me/5511999999999?text=${text}`, '_blank');
+            });
+
+            // 7. FAQ ACCORDION TOGGLE
+            const faqButtons = document.querySelectorAll('.faq-btn');
+            faqButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const content = btn.nextElementSibling;
+                    const icon = btn.querySelector('svg');
+
+                    const isExpanded = !content.classList.contains('hidden');
+
+                    // Close all FAQs
+                    document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                    document.querySelectorAll('.faq-btn svg').forEach(i => i.classList.remove('rotate-180'));
+
+                    // Toggle current FAQ
+                    if (!isExpanded) {
+                        content.classList.remove('hidden');
+                        icon?.classList.add('rotate-180');
+                    }
+                });
+            });
+
+            // 8. MOBILE MENU TOGGLE
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuOpenIcon = document.getElementById('menu-icon-open');
+            const menuCloseIcon = document.getElementById('menu-icon-close');
+
+            mobileBtn?.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    menuOpenIcon.classList.remove('hidden');
+                    menuCloseIcon.classList.add('hidden');
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    menuOpenIcon.classList.add('hidden');
+                    menuCloseIcon.classList.wrap = 'hidden';
+                    menuCloseIcon.classList.remove('hidden');
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>
